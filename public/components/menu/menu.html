@@ -1,0 +1,129 @@
+<!--<div class="off-canvas-wrap" data-offcanvas>-->
+<!--<div class="inner-wrap">-->
+<!--<nav class="tab-bar">-->
+<!--<section class="left-small">-->
+<!--<a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>-->
+<!--</section>-->
+<!--</nav>-->
+
+<!--<aside class="left-off-canvas-menu">-->
+<!--<ul class="off-canvas-list">-->
+<!--<li><label>Foundation</label></li>-->
+<!--<li><a href="#">Option 1</a></li>-->
+<!--<li><a href="#" class="off-canvas-submenu-call">Option 2 <span class="right"> + </span></a></li>-->
+<!--<ul class="off-canvas-submenu">-->
+<!--<li><a href="#">Sub menu 1</a></li>-->
+<!--<li><a href="#">Sub menu 2</a></li>-->
+<!--<li><a href="#">Sub menu 3</a></li>-->
+<!--</ul>-->
+<!--<li><a href="#">Option 3</a></li>-->
+<!--<li><a href="#" class="off-canvas-submenu-call">Option 4 <span class="right"> + </span></a></li>-->
+<!--<ul class="off-canvas-submenu">-->
+<!--<li><a href="#">Sub menu 1</a></li>-->
+<!--<li><a href="#">Sub menu 2</a></li>-->
+<!--<li><a href="#">Sub menu 3</a></li>-->
+<!--</ul>-->
+<!--<li><a href="#">Option 5</a></li>-->
+<!--<li><a href="#">Option 6</a></li>-->
+
+<!--</ul>-->
+<!--</aside>-->
+
+<!--<section class="main-section">-->
+<!--<h1 class="text-center">Something Important</h1>-->
+<!--<img src="http://placeimg.com/1640/480/arch/grayscale" alt="" />-->
+<!--<h1 class="text-center">Something Important</h1>-->
+<!--<img src="http://placeimg.com/1640/480/arch/grayscale" alt="" />-->
+<!--<h1 class="text-center">Something Important</h1>-->
+<!--<img src="http://placeimg.com/1640/480/arch/grayscale" alt="" />-->
+<!--<h1 class="text-center">Something Important</h1>-->
+<!--<img src="http://placeimg.com/1640/480/arch/grayscale" alt="" />-->
+<!--<h1 class="text-center">Something Important</h1>-->
+<!--<img src="http://placeimg.com/1640/480/arch/grayscale" alt="" />-->
+
+<!--</section>-->
+
+<!--<a class="exit-off-canvas"></a>-->
+
+<!--</div>-->
+<!--</div>-->
+
+<!--Gender-->
+<!--Foot Motion -drop down-->
+<!--Over Pronator-->
+<!--Neutral-->
+<!--Supinator-->
+<!--Heel Striker-->
+<!--Forefoot Striker-->
+<!--Brands-->
+<!--altra-->
+<!--Asics-->
+<!--Brooks-->
+<!--Mizuno-->
+<!--NewBalance-->
+<!--Nike-->
+<ul class="vertical menu" data-accordion-menu>
+    <li>
+        <a href="#">Item 1</a>
+        <ul class="menu veritcal nested">
+            <li><a href="#">Item 1A</a></li>
+            <li><a href="#">Item 1B</a></li>
+        </ul>
+    </li>
+</ul>
+<!--<div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas data-position="left">-->
+<!--<div class="row column">-->
+<!--<br>-->
+<!--&lt;!&ndash;<img class="thumbnail" src="http://placehold.it/550x350">&ndash;&gt;-->
+<!--<h5>Runner Runner</h5>-->
+<!--&lt;!&ndash;<p>Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus&ndash;&gt;-->
+<!--&lt;!&ndash;lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora&ndash;&gt;-->
+<!--&lt;!&ndash;torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo.</p>&ndash;&gt;-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="off-canvas-wrap" data-offcanvas>-->
+<!--<div class="inner-wrap">-->
+<!--<nav class="tab-bar">-->
+<!--<section class="left-small">-->
+<!--<a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>-->
+<!--</section>-->
+<!--</nav>-->
+
+<!--<aside class="left-off-canvas-menu">-->
+<!--<ul class="off-canvas-list">-->
+<!--<li><label>Runner</label></li>-->
+<!--<li><a href="#">Shoe</a></li>-->
+<!--<li><a href="#" class="off-canvas-submenu-call"> Foot Motion <span class="right"> + </span></a></li>-->
+<!--<ul class="off-canvas-submenu">-->
+<!--<li><a href="#">Sub menu 1</a></li>-->
+<!--<li><a href="#">Sub menu 2</a></li>-->
+<!--<li><a href="#">Sub menu 3</a></li>-->
+<!--<li><a ui-sref="selectProduct">Sub menu 3</a></li>-->
+<!--</ul>-->
+<!--<li><a href="#">Option 3</a></li>-->
+<!--<li><a href="#" class="off-canvas-submenu-call"> Type <span class="right"> + </span></a></li>-->
+<!--<ul class="off-canvas-submenu">-->
+<!--<li><a href="#">Sub menu 1</a></li>-->
+<!--<li><a href="#">Sub menu 2</a></li>-->
+<!--<li><a href="#">Sub menu 3</a></li>-->
+<!--</ul>-->
+<!--<li><a href="#">Option 5</a></li>-->
+<!--<li><a href="#">Option 6</a></li>-->
+
+<!--</ul>-->
+<!--</aside>-->
+
+<!--<a class="exit-off-canvas"></a>-->
+
+<!--</div>-->
+<!--</div>-->
+<script>
+    $(document).foundation();
+    $(".off-canvas-submenu").hide();
+    $(".off-canvas-submenu-call").click(function () {
+        var icon = $(this).parent().next(".off-canvas-submenu").is(':visible') ? '+' : '-';
+        $(this).parent().next(".off-canvas-submenu").slideToggle('fast');
+        $(this).find("span").text(icon);
+    });
+
+</script>

@@ -1,0 +1,143 @@
+Admin Page
+<div ng-repeat="prod in products">
+
+    brand: {{prod.brand}}
+    <br>
+    model: {{prod.model}}
+    <br>
+    Id: {{prod._id}}
+    <br>
+    <button class="button" ng-click="removeProduct(prod._id)">delete product</button>
+
+</div>
+<!--<div class="row">-->
+<!--<div class="large-12 columns">-->
+<!--<label>Input Label</label>-->
+<!--<input type="text" placeholder=""/>-->
+<!--</div>-->
+<!--</div>-->
+
+
+<div class="row">
+    <div class="large-2 medium-4 columns">
+        <label>BRAND</label>
+        <input ng-model="newProduct.brand" type="text" placeholder=""/>
+    </div>
+    <div class="large-2 medium-4 columns">
+        <label>MODEL NAME</label>
+        <input ng-model="newProduct.model" type="text" placeholder=""/>
+    </div>
+    <!--<div class="large-2 medium-4 columns">-->
+    <!--<label>PRICE</label>-->
+    <!--<input type="text" placeholder=""/>-->
+    <!--</div>-->
+    <!--<div class="large-2 medium-4 columns">-->
+    <!--<label>TYPE</label>-->
+    <!--<input type="text" placeholder=""/>-->
+    <!--</div>-->
+    <!--<div class="large-2 medium-4 columns">-->
+    <!--<label>TYPE</label>-->
+    <!--<input type="text" placeholder=""/>-->
+    <!--</div>-->
+    <!--<div class="large-2 medium-4 columns">-->
+    <!--<label>TYPE</label>-->
+    <!--<input type="text" placeholder=""/>-->
+    <!--</div>-->
+    <div class="large-2 medium-4 columns">
+        <label>Submit Product</label>
+        <!--<div class="small-2 small-centered columns">-->
+        <button ng-click="addProduct(newProduct)" class="facebook button split">Submit</button>
+    </div>
+
+</div>
+<br>
+<div class="row">
+    <div class="large-2 medium-4 columns">
+        <label>BRAND</label>
+        <select>
+            <option value="altra">Altra</option>
+            <option value="asics">Asics</option>
+            <option value="brooks">Brooks</option>
+            <option value="mizuno">Mizuno</option>
+            <option value="nike">Nike</option>
+        </select>
+    </div>
+
+
+    <div class="large-2 medium-4 columns">
+        <label>MODEL</label>
+        <select>
+            <option value="asics 2120">Asics 2120</option>
+            <option value="asics 2140">Asics 2140</option>
+            <option value="brooks beast">Brooks Beast</option>
+            <option value="mizuno wave">Mizuno Wave</option>
+            <option value="nike free">Nike Free</option>
+        </select>
+    </div>
+
+
+    <div class="large-2 medium-4 columns">
+        <label>TYPE</label>
+        <select>
+            <option value="road">Road</option>
+            <option value="asics">Cross Country</option>
+            <option value="brooks">Track</option>
+            <option value="mizuno">Trail</option>
+            <option value="nike">Road Racing</option>
+            <option value="minimal">Minimal</option>
+        </select>
+    </div>
+
+
+    <!--<div class="large-2 medium 4 columns">-->
+    <!--<label>Brand</label>-->
+    <!--<select ng-model="product.brand">-->
+    <!--<option value="altra">Altra</option>-->
+    <!--<option value="asics">Asics</option>-->
+    <!--<option value="brooks">Brooks</option>-->
+    <!--<option value="mizuno">Mizuno</option>-->
+    <!--<option value="nike">Nike</option>-->
+    <!--</select>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+    <!--<div class="large-2 columns">-->
+    <!--<label>Submit Product</label>-->
+    <!--&lt;!&ndash;<div class="small-2 small-centered columns">&ndash;&gt;-->
+    <!--<button href="#" class="facebook button split">Submit</button>-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--</div>-->
+    <!--</div>-->
+    <!---->
+    <div class="large-2 medium-4 columns">
+        <label>Select Box</label>
+        <select>
+            <option value="altra">Altra</option>
+            <option value="asics">Asics</option>
+            <option value="brooks">Brooks</option>
+            <option value="mizuno">Mizuno</option>
+            <option value="nike">Nike</option>
+        </select>
+    </div>
+</div>
+<!--<div class="row">-->
+<!--<div class="large-6 medium-6 columns">-->
+<!--<label>Choose Your Favorite</label>-->
+<!--<input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio-->
+<!--1</label>-->
+<!--<input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label-->
+<!--for="pokemonBlue">Radio 2</label>-->
+<!--</div>-->
+<!--<div class="large-6 medium-6 columns">-->
+<!--<label>Check these out</label>-->
+<!--<input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>-->
+<!--<input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="row">-->
+<!--<div class="large-12 columns">-->
+<!--<label>Textarea Label</label>-->
+<!--<textarea placeholder=""></textarea>-->
+<!--</div>-->
+<!--</div>-->
+</form>
+</div>
